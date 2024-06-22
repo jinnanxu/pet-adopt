@@ -1,7 +1,8 @@
 # 宠物领养小程序
 
 #### 介绍
-宠物领养小程序，包括前端小程序、管理后台。分享更多毕设项目，请进入我的主页查看。
+宠物领养小程序，包括前端小程序、管理后台。分享更多毕设项目，请查看：https://github.com/jinnanxu/biyesheji
+或者访问我国内的码云gitee仓库，ID：野生程序猿
 
 #### 软件架构
 SpringBoot、MyBatis、MySQL、原生小程序。
@@ -10,11 +11,6 @@ SpringBoot、MyBatis、MySQL、原生小程序。
 1.  不会部署，或出现bug可以联系作者：157086662@qq.com。需要 **《助农小程序》、公寓平台、自习室** 等项目的同学请联系我。
 2.  更多原创项目请联系我：
 
-![科技助农小程序](pet-server/src/main/webapp/images/20231101222613.jpg)
-![摄影约拍小程序](pet-server/src/main/webapp/images/20231113224652.jpg)
-
-![认养一棵树农产品电商](pet-server/src/main/webapp/images/20231119221748.jpg)
-![高校学习小助手](pet-server/src/main/webapp/images/20231127111128.jpg)
 
 #### 安装教程
 

@@ -14,8 +14,7 @@ App({
     })
   },
   globalData: {
-    // apiBaseUrl: 'http://127.0.0.1:8090/pet-server',
-    apiBaseUrl: 'http://118.25.89.125:8090/pet-server',
+    apiBaseUrl: 'http://127.0.0.1:8090/pet-server',
     userInfo: null
   }
 })
