@@ -1,0 +1,29 @@
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view class="blog-list">
+  <view class="empty-txt" wx:if="{{noticeList.length == 0}}">
+    您未发布过寻宠启事~
+  </view>
+  <view wx:for="{{noticeList}}" wx:key="noticeId" class="item" bindtap="toNoticeDetail" data-noticeid="{{item.noticeId}}">
+    <view class="blog-txt">
+      <view class="title">{{item.title}}</view>
+      <view class="pet-meta">
+        <view class="pitem">
+          <image class="icon" src="/images/menu-pet.png"></image>
+          <text class="txt">{{item.category}}</text>
+        </view>
+        <view class="pitem">
+          <image class="icon" src="/images/lights.png"></image>
+          <text class="txt">特征：{{item.features}}</text>
+        </view>
+        <view class="pitem">
+          <image class="icon" src="/images/contact.png"></image>
+          <text class="txt">联系方式：{{item.contact}}</text>
+        </view>
+        <view class="pitem">
+          <image class="icon" src="/images/calendar.png"></image>
+          <text class="txt">发布日期：{{filter.format(item.publishTime, 'YY-MM-DD')}}</text>
+        </view>
+      </view>
+    </view>
+  </view>  
+</view>

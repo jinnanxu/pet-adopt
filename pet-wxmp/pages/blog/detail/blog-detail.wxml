@@ -1,0 +1,43 @@
+<!--pages/pet/list.wxml-->
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view>
+  <!-- <view class="pet-head">
+    头部介绍
+  </view> -->
+  <view class="pet-list">
+    <view class="item">
+      <view class="img-box">
+        <image class="pet-img" src="{{blog.blog.pic}}"></image>
+      </view>
+      <view class="pet-title">
+        {{blog.blog.title}}
+      </view>
+      <view class="desc">
+        {{blog.blog.content}}
+      </view>
+
+      <view class="desc-p">
+        <image src="/images/profile-pet.png" class="icon"></image>
+        <text class="meta cat">宠物品种：</text>
+        <text class="content">{{blog.pet.subCategory}}</text>
+      </view>
+      <view class="desc-p">
+        <image src="/images/gender.png" class="icon"></image>
+        <text class="meta cat">宠物性别：</text>
+        <text class="content">{{blog.pet.gender}}</text>
+      </view>
+      <view class="desc-p">
+        <image src="/images/lights.png" class="icon"></image>
+        <text class="meta cat">领养时间：</text>
+        <text class="content">{{blog.adoptDateStr}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/curr-user.png" class="icon"></image>
+        <text class="meta loc orange-txt">{{blog.user.nickName}} </text>
+        <text class="content">{{filter.format(blog.blog.publishTime, 'MM-DD hh:mm')}}发布</text>
+      </view>
+    </view>
+  </view>
+  <button class="orange-btn" bindtap="back">返回</button>
+  <button wx:if="{{btype==2}}" class="gray-btn" bindtap="accusation" data-petid="{{blog.pet.petId}}">举报</button>
+</view>

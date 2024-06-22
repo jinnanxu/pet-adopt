@@ -1,0 +1,64 @@
+<!--pages/user/profile.wxml-->
+<view class="content">
+  <view class="profile">
+    <view class="item">
+      <image class="icon-l" src="/images/curr-user.png"></image>
+     <text class="orange-txt">{{userInfo.nickName}}</text><text class="gray-text"> {{userInfo.mobile}}</text>
+    </view>
+  </view>
+  <view class="profile">
+    <view class="item" bindtap="toMyPet">
+      <image class="icon-l" src="/images/menu-pet.png"></image>
+      送养记录
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+    <view class="item" bindtap="toMyAdopt">
+      <image class="icon-l" src="/images/profile-pet.png"></image>
+      领养申请
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+    <view class="item" bindtap="toMyBlog">
+      <image class="icon-l" src="/images/compass-active.png"></image>
+      我的动态
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+    <view class="item" bindtap="toMySearch">
+      <image class="icon-l" src="/images/menu-search.png"></image>
+      我发布的寻宠
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+    <!-- <view class="item" bindtap="toMyPetPublish">
+      <image class="icon-l" src="/images/menu-send.png"></image>
+      我发布的送养
+      <image class="icon-r" src="/images/right.png"></image>
+    </view> -->
+  </view>
+  <view class="profile">
+    <view class="item">
+      <image class="icon-l" src="/images/user-validate.png"></image>
+      <text wx:if="{{userInfo.isValidate == -1}}" bindtap="toValidate">未实名认证</text>
+      <text wx:if="{{userInfo.isValidate == 1}}" class="green-txt">实名认证用户</text>
+      <text wx:if="{{userInfo.isValidate == 2}}" class="orange-txt">实名认证审核中</text>
+      <text wx:if="{{userInfo.isValidate == 3}}" class="gray-txt">已列入黑名单</text>
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+    <!-- <view class="item" bindtap="">
+      <image class="icon-l" src="/images/user-off.png"></image>
+      个人资料
+      <image class="icon-r" src="/images/right.png"></image>
+    </view> -->
+    <view class="item" bindtap="toMsgCenter">
+      <image class="icon-l" src="/images/menu-notice.png"></image>
+      <text>消息中心</text>
+      <view class="new-msg" wx:if="{{newMsg > 0}}">{{newMsg}}</view>
+      <image class="icon-r" src="/images/right.png"></image>
+    </view>
+  </view>
+
+  <view class="profile">
+    <view class="item" bindtap="logout">
+      <image class="icon-l" src="/images/logout.png"></image>
+      退出登录
+    </view>
+  </view>
+</view>

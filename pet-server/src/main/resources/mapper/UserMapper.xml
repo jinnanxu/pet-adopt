@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pet.dao.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="pet.dao.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="id_card" jdbcType="VARCHAR" property="idCard" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="is_validate" jdbcType="INTEGER" property="isValidate" />
+  </resultMap>
+</mapper>

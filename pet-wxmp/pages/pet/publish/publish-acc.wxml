@@ -1,0 +1,15 @@
+<!--miniprogram/pages/select_role/role.wxml-->
+<!--提交举报-->
+<view  class="user-file">
+  <view class="h3 gray-txt txt-center">我要举报</view>
+  <!-- <view class="h3 txt-center">提供宠物寻找线索</view>
+  <view class="val-input">
+    <view class="label">标题</view>
+    <input bindinput="bindNameInput" type="text"></input>
+  </view> -->
+  <view class="val-input">
+    <view class="label">举报内容</view>
+    <textarea bindinput="bindDetailInput" placeholder="请输入您要举报的信息"/>
+  </view>
+  <button class="orange-btn" bindtap="submitAcc">提交</button>
+</view>

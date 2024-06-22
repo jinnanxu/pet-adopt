@@ -1,0 +1,20 @@
+<!--pages/pet/list.wxml-->
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view>
+  <view class="blog-list">
+    <view class="item">
+      <view class="title">
+        {{msg.title}}
+      </view>
+      <view class="desc-p">
+        <image src="/images/time.png" class="icon"></image>
+        <text class="content">{{filter.format(msg.sendTime, 'YY-MM-DD hh:mm')}}</text>
+      </view>
+      <view class="desc">
+        {{msg.content}}
+      </view>
+    </view>
+  </view>
+  <button class="orange-btn" bindtap="back">返回</button>
+  <button wx:if="{{btype==2}}" class="gray-btn" bindtap="accusation" data-petid="{{blog.pet.petId}}">举报</button>
+</view>

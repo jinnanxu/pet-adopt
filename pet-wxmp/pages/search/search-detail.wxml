@@ -1,0 +1,45 @@
+<!--pages/pet/list.wxml-->
+<view>
+  <!-- <view class="pet-head">
+    头部介绍
+  </view> -->
+  <view class="pet-list">
+    <view class="item">
+      <view class="img-box">
+        <image class="pet-img" src="{{petNotice.pic}}"></image>
+      </view>
+      <view class="pet-title">
+        {{petNotice.title}}
+      </view>
+      <view class="desc-p2">
+        <image src="/images/profile-pet.png" class="icon"></image>
+        <text class="meta cat">宠物品种：</text>
+        <text class="content">{{petNotice.category}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/gender.png" class="icon"></image>
+        <text class="meta cat">宠物特征：</text>
+        <text class="content">{{petNotice.features}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/map.png" class="icon"></image>
+        <text class="meta loc">走失地点：</text>
+        <text class="content">{{petNotice.location}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/lights.png" class="icon"></image>
+        <text class="meta cat">状态：</text>
+        <text class="content">{{petNotice.status}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/contact.png" class="icon"></image>
+        <text class="meta cat">联系方式：</text>
+        <text class="content">{{petNotice.contact}}</text>
+      </view>
+      <view class="desc">
+        {{petNotice.detail}}
+      </view>
+    </view>
+  </view>
+  <button class="orange-btn" bindtap="toMsgForm">提供线索</button>
+</view>

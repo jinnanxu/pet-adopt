@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pet.dao.mapper.AdoptMapper">
+  <resultMap id="BaseResultMap" type="pet.dao.model.Adopt">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="adopt_id" jdbcType="INTEGER" property="adoptId" />
+    <result column="adopt_user" jdbcType="INTEGER" property="adoptUser" />
+    <result column="publish_user" jdbcType="INTEGER" property="publishUser" />
+    <result column="pet_id" jdbcType="INTEGER" property="petId" />
+    <result column="adopt_date" jdbcType="TIMESTAMP" property="adoptDate" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

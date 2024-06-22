@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/pet/list",
+    "pages/pet/detail",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/profile",
+    "pages/user/login/login",
+    "pages/user/regist/regist",
+    "pages/user/validate/validate",
+    "pages/blog/list",
+    "pages/blog/detail/blog-detail",
+    "pages/blog/publish/blog-publish",
+    "pages/search/publish/publish",
+    "pages/search/search-list",
+    "pages/user/adopt/adopt-list",
+    "pages/user/blog/my-blog",
+    "pages/user/search/search-list",
+    "pages/pet/publish/publish-adopt",
+    "pages/search/search-detail",
+    "pages/search/publish/clue",
+    "pages/pet/publish/publish-acc",
+    "pages/user/msg/message",
+    "pages/user/msg/msg-detail",
+    "pages/user/pet/mypet"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宠物领养小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#f90",
+    "list": [
+      {
+        "pagePath": "pages/pet/list",
+        "text": "领养",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search-list",
+        "text": "寻宠",
+        "iconPath": "/images/search.png",
+        "selectedIconPath": "/images/search-active.png"
+      },
+      {
+        "pagePath": "pages/blog/list",
+        "text": "动态",
+        "iconPath": "/images/compass.png",
+        "selectedIconPath": "/images/compass-active.png"
+      },
+      {
+        "pagePath": "pages/user/profile",
+        "text": "我的",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user-avtice.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请确认授权"
+    }
+  }
+}

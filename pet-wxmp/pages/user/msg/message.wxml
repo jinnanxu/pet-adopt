@@ -1,0 +1,23 @@
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view class="blog-list">
+  <view class="empty-txt" wx:if="{{noticeList.length == 0}}">
+    未收到消息~
+  </view>
+  <view wx:for="{{msgList}}" wx:key="messageId" class="item" bindtap="toMsgDetail" data-msgid="{{item.messageId}}">
+    <view class="blog-txt">
+      <view class="title">
+        <image class="icon-title" src="/images/new-msg.png" wx:if="{{item.isRead==0}}"></image>
+        {{item.title}}
+      </view>
+      <view class="pet-meta">
+        <view class="pitem">
+          <text class="txt">{{item.content}}</text>
+        </view>
+        <view class="pitem">
+          <image class="icon" src="/images/calendar.png"></image>
+          <text class="txt">{{filter.format(item.sendTime, 'YY-MM-DD HH:mm')}}</text>
+        </view>
+      </view>
+    </view>
+  </view>  
+</view>

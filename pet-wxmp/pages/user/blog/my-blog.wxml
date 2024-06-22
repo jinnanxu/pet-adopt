@@ -1,0 +1,25 @@
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view class="blog-list">
+  <view class="item" wx:for="{{blogList}}" wx:key="blogId" bindtap="toBlogDetail" data-blogid='{{item.blog.blogId}}'>
+    <view class="blog-txt">
+      <view class="title">{{item.blog.title}}</view>
+      <view class="pet-meta">
+        <view class="pitem">
+          <image class="icon" src="/images/menu-pet.png"></image>
+          <text class="txt">{{item.pet.category}} | {{item.pet.subCategory}} </text>
+        </view>
+        <view class="pitem">
+          <image class="icon" src="/images/calendar.png"></image>
+          <text class="txt">领养日期： {{filter.format(item.adoptDate, 'YY-MM-DD')}}</text>
+        </view>
+      </view>
+      <view class="subtitle">
+        <text class="pdate">{{filter.format(item.blog.publishTime, 'YY-MM-DD hh:mm')}}</text>
+      </view>
+    </view>
+    <view class="blog-img">
+      <image class="img" mode="aspectFit" src="{{item.blog.pic}}"></image>
+    </view>
+  </view>
+  
+</view>

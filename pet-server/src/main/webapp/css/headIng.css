@@ -1,0 +1,141 @@
+.W-header_r {
+	float:left !important;
+	width:675px !important;
+	overflow:hidden !important;
+	height:112px !important;
+	}
+
+#W-header{
+	width:100% !important;
+	background:#e2eff7 !important;
+	height:160px !important;
+	}
+	
+.c-header{
+	width:966px !important;
+	margin:0 auto !important;
+	padding:35px 12px 0px !important;
+	overflow:hidden !important;
+	height:112px !important;
+	}
+	
+	.sojump_2016logo {
+	float: left !important;
+	width:286px !important;
+	height:92px !important;
+	padding-left:5px !important;
+	text-align:left !important;
+	}
+	
+	.W-sojump_image{
+    background-image: url('./sojump2016logo.png') !important;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./sojump2016logo.png") !important;
+    background-repeat:  no-repeat !important; 
+    _background-image: none !important; /* IE6 */
+    width: 183px !important; 
+    height: 92px !important;
+    text-align: left !important;
+    position:relative !important;
+	}
+	
+	.W-sojump_image h1 {
+    display: inline !important;
+    font-size: 12px !important;
+    letter-spacing: 1.1px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #444444 !important;
+    position: absolute !important;
+    top:75px !important;
+    _top:70px !important;
+}
+
+.W-header_r {
+	float:left !important;
+	width:675px !important;
+	overflow:hidden !important;
+	height:112px !important;
+	}
+	
+	.W-header_reg {
+	float: right !important;
+	height: 30px !important;
+	margin:0 auto !important;
+	text-align:right !important;
+	padding-right:15px !important;
+	font-size:14px !important;
+	}
+	
+	.W-header_reg {
+	float: right !important;
+	height: 30px !important;
+	margin:0 auto !important;
+	text-align:right !important;
+	padding-right:15px !important;
+	font-size:14px !important;
+	}
+.W-header_reg ul {
+	margin: auto !important;
+	padding: 0 !important;
+	}
+.W-header_reg ul li {
+	display:inline !important;
+	padding: 0 !important;
+	line-height:30px !important;
+	float:left !important;
+	margin-left:22px !important;
+	font-size:14px !important;
+	}
+.W-header_btn {
+    -webkit-border-radius:6 !important;
+    -moz-border-radius:6 !important;
+    border-radius:6px !important;
+    color: #ffffff !important;
+    background: #e77817 !important;
+    text-decoration: none !important;
+	width:82px !important;
+	height:30px !important;
+	line-height:30px !important;
+	display:inline-block !important;
+	text-align:center !important;
+	}
+A.new_titxt{
+	color:#555 !important;
+	font-size:16px !important;
+	}
+A.new_titxt:hover{
+	color:#ff9900 !important;
+	}
+/*µ¼º½*/	
+.W-Menu{
+	margin:28px auto 0px !important;
+	padding:0px !important;
+	float: right !important;
+	width:675px !important;
+	}
+.W-Menu ul {
+	margin:0 !important;
+	padding:0 !important;
+	}
+.W-Menu ul li {w
+	display: inline !important;
+	float: left !important;
+	padding: 0px 6px !important;
+	cursor: pointer !important;
+	margin:0px 24px !important;
+	letter-spacing:2px !important;
+	}
+.W-Menu ul li a,.W-Menu ul li a:visited{
+	font-size:18px !important;
+	color:#6a6a6a !important;
+	}
+.W-Menu ul li a:hover{
+	color:#e77817 !important;
+	border-bottom:2px solid #e77817 !important;
+	padding-bottom:4px !important;
+	}
+.W-Menu ul li.acitve{
+	border-bottom:2px solid #e77817 !important;
+	padding-bottom:4px !important;
+	}
+	

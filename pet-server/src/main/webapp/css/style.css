@@ -1,0 +1,75 @@
+.catagory .item:HOVER{
+	background-color: #458b00;
+	color: #fff;
+}
+.news-title{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #458b00;
+}
+.news-title .sub{
+	font-size: 16px;
+	color: #666;
+	font-weight: normal;
+	padding: 5px 0;
+}
+.news-content{
+	padding: 10px 20px;
+}
+.Hui-article table{
+	border-collapse: collapse;
+}
+#container .list .news-content{
+	text-align: left;
+	font-size: 16px;
+}
+#example td{
+	font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+#example .info th{
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+}
+.rightasw{
+	display: block;
+}
+.longtxt{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.qadiv{
+	border-bottom: 1px solid #ccc;
+}
+.qadiv .qtitle{
+	font-weight: bold;
+}
+.qadiv .qtitle .qtype{
+	font-weight: normal;
+}
+.ckbtns{
+	padding: 10px 0;
+}
+.userinfo{
+	float: left;
+}
+.userinfo p{
+	line-height: 30px;
+	padding-left: 20px;
+	font-size: 18px;
+}
+.table .text-r{
+	font-weight: bold;
+	padding-right: 10px;
+}

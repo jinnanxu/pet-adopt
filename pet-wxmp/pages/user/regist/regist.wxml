@@ -1,0 +1,41 @@
+<!--miniprogram/pages/regist/regist.wxml-->
+<view class="container">
+  <view class="h3 dark-gray txt-center">用户注册</view>
+  <view class="val-input">
+    <view class="meta">手机号</view>
+    <input bindinput="bindMobileChange" type="number"></input>
+  </view>
+  <view class="val-input">
+    <view class="meta">昵称</view>
+    <input bindinput="bindNickNameChange" type="number"></input>
+  </view>
+  <view class="val-input">
+    <view class="meta">性别</view>
+    <picker bindchange="bindGenderChange" value="{{index}}" range="{{genders}}">
+      <view>{{user.gender}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="meta">出生日期</view>
+    <picker mode="date" value="1990-01-01" bindchange="bindDateChange" >
+      <view class="gray-txt" wx:if="{{user.birthday == ''}}">请选择出生日期</view>
+      <view wx:if="{{user.birthday != ''}}">{{user.birthday}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="meta">所在地区</view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker" wx:if="{{selectedCity}}">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+      <view class="gray-txt" wx:if="{{!selectedCity}}">请选择所在地区</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="meta">登录密码</view>
+    <input bindinput="bindPwdChange" type="password"></input>
+  </view>
+  <view class="">
+    <button class="scan-btn reg-btn" bindtap="regedit">注册</button>
+  </view>
+</view>

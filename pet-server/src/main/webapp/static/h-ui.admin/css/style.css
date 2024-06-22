@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 你自己的样式 */
+.margin-top-10{
+	margin-top: 10px;
+}
+.Hui-article .table{
+	
+}
+.Hui-article .table td{
+	line-height: 30px;
+}

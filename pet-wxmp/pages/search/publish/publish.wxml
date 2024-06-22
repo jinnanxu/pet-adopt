@@ -1,0 +1,35 @@
+<!--miniprogram/pages/select_role/role.wxml-->
+<!--启事表单-->
+<view  class="user-file">
+  <view class="h3 gray-txt txt-center">发布宠物寻找启事</view>
+  <view class="val-input">
+    <view class="label">启事标题</view>
+    <input type="text" model:value="{{title}}"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物图片</view>
+    <image wx:if="{{pic != ''}}" mode="aspectFit" class="coach-img" src="{{pic}}"></image>
+    <button type="primary" class="green-btn mt0" bindtap="chooseImg">选择图片</button>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物品种</view>
+    <input type="text" model:value="{{category}}"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物特征</view>
+    <input type="text" model:value="{{features}}"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">走失地点</view>
+    <input type="text" model:value="{{location}}"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">其它描述</view>
+    <textarea bindinput="bindDetailInput" placeholder="请输入其它描述"/>
+  </view>
+  <view class="val-input">
+    <view class="label">联系方式</view>
+    <input type="text" model:value="{{contact}}"></input>
+  </view>
+  <button class="orange-btn" bindtap="submitSearch">提交</button>
+</view>

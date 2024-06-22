@@ -1,0 +1,656 @@
+@charset "utf-8";
+/*包含以下五种的链接*/
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+    text-decoration: none;
+}
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+#headline {
+	width: 100%;
+	min-width: 1263px;
+	height: 300px;
+	background: linear-gradient(to right bottom, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(../img/headline.jpg) no-repeat center;
+}
+#headline .center {
+	width: 1263px;
+	height: 300px;
+	margin: 0 auto;
+}
+#headline hgroup {
+	padding: 100px 0 0 50px;
+}
+#headline h2 {
+	color: #eee;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	color: #eee;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+#container {
+	width: 980px;
+	margin: 30px auto;
+}
+#container .sidebar {
+	width: 340px;
+	float: right;
+}
+#container .sidebox {
+	border: 1px solid #eee;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+#container .sidebox h2 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-indent: 8px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fafafa;
+	color: #666;
+	text-align: left;
+}
+#container .tag {
+	padding: 10px 0;
+}
+#container .tag li {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin: 2px 0;
+	background-color: #eee;
+	text-align: left;
+	text-indent: 8px;
+}
+#container .tag a {
+	display: block;
+	color: #999;
+}
+#container .tag a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .figure {
+	padding: 10px 0;
+}
+#container figure {
+	display: inline-block;
+	padding: 15px;
+	color: #666;
+}
+#container .box {
+	padding: 10px 0;
+}
+#container .box a {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 2px 0;
+	text-align: left;
+	text-indent: 35px;
+	color: #999;
+}
+#container .box a.trea1 {
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+#container .list {
+	width: 100%;
+	margin: 0 auto;
+}
+#container .infor {
+	height: 45px;
+	line-height: 45px;
+	background-color: #eee;
+	margin: 0 0 20px 0;
+}
+#container .information .left {
+	display: inline-block;
+	float: left;
+}
+#container .information .left li {
+	display: inline-block;
+	width: 150px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+}
+#container .information .left li:first-child {
+	background-color: #fff;
+	border-top: 2px solid #458b00;
+	position: relative;
+	left: 1px;
+}
+#container .information .left a {
+	color: #666;
+}
+#container .information .right {
+	display: inline-block;
+	padding: 0 20px 0 0;
+	float: right;
+}
+#container .information .right li {
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+#container .information .right a {
+	padding: 3px 8px;
+	color: #666;
+}
+#container .information .right a.selected, #container .information .right a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+#container .tour {
+	width: 908px;
+	padding: 0;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	position: relative;
+}
+#container .tour img {
+	float: left;
+}
+#container .tour figcaption {
+	width: 528px;
+	height: 230px;
+	float: right;
+}
+#container .tour hgroup {
+	width: 300px;
+}
+#container .tour h2 {
+	font-size: 24px;
+	color: #333;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+}
+#container .tour h3 {
+	font-size: 16px;
+	color: #666;
+	line-height: 1.5;
+	font-weight: normal;
+	padding: 10px 0 10px 25px;
+}
+#container .tour ol {
+	padding: 0 0 0 25px;
+	color: #666;
+	line-height: 2;
+}
+#container .tour mark {
+	background-color: #fff;
+	border: 1px solid #458b00;
+	border-radius: 4px;
+	padding: 0 5px;
+	color: #458b00;
+}
+#container .tour .buy {
+	position: absolute;
+	top: 55px;
+	right: 30px;
+}
+#container .tour .price {
+	color: #f60;
+	font-size: 20px;
+}
+#container .tour .price strong {
+	font-size: 36px;
+}
+#container .tour .price s {
+	font-size: 16px;
+	color: #999;
+}
+#container .tour .reserve {
+	margin: 10px 0 0 0;
+}
+#container .tour .reserve a {
+	display: block;
+	width: 152px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #f60;
+}
+#container .tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #59b200;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#container .tour .disc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 52px;
+	height: 52px;
+	background: url(../img/disc.png) no-repeat;
+}
+#container .tour .disc span {
+	display: block;
+	transform: rotate(45deg);
+	width: 52px;
+	height: 52px;
+	padding: 5px 0 0 0;
+	text-indent: 7px;
+	font-size: 14px;
+	color: #ff7a4d;
+}
+#container .tour footer {
+	width: 528px;
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-indent: 25px;
+	background-color: #fafafa;
+	position: absolute;
+	bottom: 0;
+}
+#container .tour time {
+	color: #458b00;
+}
+#container .information .more, #container .scenery .more {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background-color: #fafafa;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+}
+#container .ticket, #container .scenery, #container .about {
+	text-align: center;
+	color: #666;
+	font-size: 18px;
+	min-height: 447px;
+}
+#container .ticket h2, #container .scenery h2, #container .about h2 {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 15px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+#container .ticket .type {
+	margin: 20px 0 10px 0;
+}
+#container .ticket .type mark {
+	color: #fff;
+	background-color: #458b00;
+	padding: 5px 8px;
+	border-radius: 4px;
+	margin: 0 10px 0 16px;
+}
+#container .ticket .left {
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .right {
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .button {
+	width: 9%;
+	display: inline-block;
+}
+#container .ticket .submit {
+	display: inline-block;
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #f60;
+	border: none;
+	cursor: pointer;
+}
+#container .form .ctx{
+	width: 250px;
+	height: 45px;
+	color: #666;
+	padding: 5px;
+	margin: 0 0 0 16px;
+	font-size: 18px;
+	display: inline-block;
+	text-align: left;
+}
+#container .ticket .form p {
+	line-height: 3;
+}
+#container .form input {
+	width: 250px;
+	height: 45px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 5px;
+	margin: 0 0 0 16px;
+	font-size: 18px;
+}
+#container  .form select {
+	width: 250px;
+	height: 45px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 5px;
+	margin: 0 0 0 16px;
+	font-size: 18px;
+}
+#container .ticket .form label{
+	display: inline-block;
+	width: 85px;
+	text-align: right;
+}
+#container .ticket .new {
+	
+}
+#container .ticket .new ul {
+	
+}
+#container .ticket .new li {
+	display: inline-block;
+	padding: 5px 10px;
+}
+#container .ticket .new .pagination li {
+	display: initial;
+    padding: 0;
+    font-size: 16px;
+}
+#container .ticket .new li:first-child {
+	padding-left: 0;
+}
+#container .ticket .new .item:HOVER {
+	background-color: #458b00;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#container .ticket table {
+	margin: 10px 0 0 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+#container .ticket th {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+    font-weight: normal;
+}
+#container .ticket td {
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ddd;
+	text-align: center;
+	font-size: 14px;
+}
+#container .ticket tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+#container .ticket tr:hover {
+	background-color: #eee;
+}
+#container .ticket .price {
+	color: #f60;
+	font-weight: bold;
+}
+#container .ticket .more {
+	color: #666;
+}
+#container .ticket .reserve {
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #0ae;
+}
+#container .scenery figure {
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 4px;
+	margin: 15px 5px 15px 0;
+	width: 435px;
+	text-align: left;
+}
+#container .scenery figcaption {
+	text-align: center;
+	padding: 5px 0;
+}
+#container .about p {
+	line-height: 2;
+	margin: 20px 0;
+}
+#container .about address {
+	line-height: 1.6;
+	margin: 20px 0;
+	font-style: normal;
+}
+.search{
+	padding-left: 600px;
+	padding-top: 20px;
+}
+.search_chinese{
+	  border-radius: 6px;
+	  background: #0ae;
+	  padding: 2px 15px;
+      font-size: 16px;
+      padding-top: 6px;
+      color: #fff;
+}
+.input_search{
+   padding: 14px 0px;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+	height: 20px;
+}
+.app-route{
+	height: 30px; line-height: 30px; width: 80px; background: #4f9d00; color:#fff;display: inline-block;
+	text-decoration: none !important;
+}
+.app-route:HOVER{
+	color: #fff !important;
+	background-color: #3c7700;
+}
+.del-a{background-color: #f90;}
+.del-a:HOVER{background-color: #f60;}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
+    padding: 0 5px;
+}
+.fourm-list{
+	
+}
+.fourm-list .forum-item{
+	clear: both;
+}
+.fourm-list .forum-item .line{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: .5px solid #ccc;
+}
+.fourm-list .forum-item .msg-item{
+	min-height: 160px;
+	border-bottom: .5px solid #ccc;
+}
+.forum-item .msg-item .user-info{
+	padding-bottom: 20px;
+}
+.fourm-list .user-info{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.fourm-list .user-info p{
+	padding: 3px 0;
+}
+.fourm-list .user-info img{
+	width: 80px;
+	height: 80px;
+	padding-bottom: 8px;
+}
+.fourm-list .ftitle{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.fourm-list .ftitle a:HOVER{
+	color: #2CC0CE;
+}
+.fourm-list .ftime{
+	font-size: 14px;
+	color: #999;
+	padding-bottom: 12px;
+}
+.fourm-list .ftime a:HOVER{
+	color: #333 !important;
+}
+.fourm-list .ftime span, .fourm-list .ftime a{
+	color: #1EBBFD !important;
+}
+.fourm-list .forum{
+	float: left;
+	width: 80%;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+.publish-form{
+	width: 60%;
+    margin: 20px auto;
+}
+.publish-form .submit, .publish-form .mute{
+	display: inline-block;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #f60;
+	border: none;
+	cursor: pointer;
+	margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+.center{
+	text-align: center;
+}
+.friends-list{
+	
+}
+.friends-list .friends-item{
+	width: 33%;
+	display: inline-block;
+	padding: 15px 1%;
+}
+.friends-list .friends-item p{
+	padding: 2px 0;
+}
+.friends-list .friends-item .male{
+	color: #1ebbfd;
+}
+.friends-list .friends-item .fmale{
+	color: #f9c;
+}
+.friends-list .img{
+	display: inline-block;
+	width: 40%;
+	height:100px;
+	text-align: center;
+	position: relative;
+}
+.friends-list .img img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+    right: 20px;
+}
+.friends-list .meta{
+	display: inline-block;
+	width: 55%;
+}
+.sendmsg{
+	color: #1EBBFD;
+}
+.replaymsg{
+	font-size: 14px;
+	font-weight: bold;
+	color: #1fbcfd;
+}
+.msg-item .forum{
+	position: relative;
+}
+.forum .like1{
+	display: none;
+}
+.forum .favorite{
+	font-weight: 500;
+	cursor: pointer;
+}

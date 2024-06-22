@@ -1,0 +1,41 @@
+/* pages/blog/list.wxss */
+.blog-list{
+  padding: 0 4%;
+  color: #666;
+  box-sizing: border-box;
+}
+.blog-list .item{
+  border-bottom: 1px solid #cccccc;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+.item .blog-txt{
+  padding: 10px 0;
+}
+.item .title{
+  font-size: 16px;
+  padding: 4px 0;
+  vertical-align: top;
+}
+.item .subtitle{
+  vertical-align: bottom;
+  font-size: 14px;
+  color: #999;
+
+}
+.subtitle .author{
+  padding-right: 4px;
+  color: #f90;
+}
+.item .pet-meta .pitem{
+  font-size: 14px;
+  color: #999;
+  padding: 4px 0;
+}
+.pitem .icon{
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.empty-txt{color: #999; text-align: center;padding: 15vh 0; font-size: 14px;}

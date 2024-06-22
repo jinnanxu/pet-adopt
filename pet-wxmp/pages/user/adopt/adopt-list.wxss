@@ -1,0 +1,86 @@
+/* pages/blog/list.wxss */
+.blog-list {
+  padding: 0 4%;
+  color: #666;
+  box-sizing: border-box;
+}
+
+.blog-list .item {
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.item .blog-txt {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.item .title {
+  font-size: 16px;
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+.item .subtitle {
+  vertical-align: bottom;
+  font-size: 14px;
+  color: #999;
+
+}
+
+.subtitle .author {
+  padding-right: 4px;
+  color: #f90;
+}
+.item .pet-meta{
+  position: relative;
+}
+.item .pet-meta .pitem {
+  font-size: 14px;
+  color: #999;
+  padding: 4px 0;
+}
+
+.pitem .icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f90;
+  background-color: #fff;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777777;
+}
+
+.on {
+  color: #f90;
+  border: 1px solid #f90;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -2px;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.pet-meta .app-btn{
+  position: absolute;
+  right: 5%;
+  bottom: 10px;
+}

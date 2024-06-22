@@ -1,0 +1,76 @@
+<wxs src="../../../utils/date.wxs" module="filter" />
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我发起的申请</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我收到的申请</view>
+</view>
+
+<view class="swiper-box" bindchange="bindChange">
+  <view class="blog-list" wx:if="{{currentTab==0}}">
+    <view class="item gray-txt" wx:if="{{adoptList0.length == 0}}">
+      空空如也~
+    </view>
+    <view wx:if="{{adoptList0.length > 0}}" class="item">
+      <view class="blog-txt" wx:for="{{adoptList0}}" wx:key="adopt.adoptId">
+        <view class="title">{{item.pet.title}}</view>
+        <view class="pet-meta">
+          <view class="pitem">
+            <image class="icon" src="/images/menu-pet.png"></image>
+            <text class="txt">{{item.pet.category}} | {{item.pet.subCategory}} </text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/calendar.png"></image>
+            <text class="txt">发布日期：{{filter.format(item.pet.publishTime, 'YY-MM-DD')}}</text>
+            <text wx:if="{{item.adopt.remark == 'OK'}}" class="txt">领养日期：{{filter.format(item.adopt.adoptDate, 'YY-MM-DD')}}</text>
+          </view>
+          <view wx:if="{{dataType == 2}}" class="pitem">
+            <image class="icon" src="/images/lights.png"></image>
+            <text class="txt">状态：{{item.pet.status}}</text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/curr-user.png"></image>
+            <text class="txt">发布人：{{item.publisher.nickName}}</text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/lights.png"></image>
+            <text class="txt">状态：{{item.adopt.remark}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="blog-list"  wx:if="{{currentTab==1}}">
+    <view class="item gray-txt" wx:if="{{adoptList1.length == 0}}">
+      空空如也~
+    </view>
+    <view wx:if="{{adoptList1.length > 0}}" class="item">
+      <view class="blog-txt" wx:for="{{adoptList1}}" wx:key="adopt.adoptId">
+        <view class="title">{{item.pet.title}}</view>
+        <view class="pet-meta">
+          <view class="pitem">
+            <image class="icon" src="/images/menu-pet.png"></image>
+            <text class="txt">{{item.pet.category}} | {{item.pet.subCategory}} </text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/calendar.png"></image>
+            <text class="txt">发布日期：{{filter.format(item.pet.publishTime, 'YY-MM-DD')}}</text>
+            <text wx:if="{{item.adopt.remark == 'OK'}}" class="txt">领养日期：{{filter.format(item.adopt.adoptDate, 'YY-MM-DD')}}</text>
+          </view>
+          <view wx:if="{{dataType == 2}}" class="pitem">
+            <image class="icon" src="/images/lights.png"></image>
+            <text class="txt">状态：{{item.pet.status}}</text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/curr-user.png"></image>
+            <text class="txt">申请人：{{item.adopter.nickName}}</text>
+          </view>
+          <view class="pitem">
+            <image class="icon" src="/images/lights.png"></image>
+            <text class="txt green-txt" wx:if="{{item.adopt.remark=='待审核'}}">状态：{{item.adopt.remark}}</text>
+            <text class="txt green-txt" wx:else>状态：{{item.adopt.remark}}</text>
+          </view>
+          <button wx:if="{{item.adopt.remark=='待审核'}}" class="app-btn" type="primary" size="mini" bindtap="agreeApp" data-adoptid="{{item.adopt.adoptId}}">同意</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pet.dao.mapper.BlackListMapper">
+  <resultMap id="BaseResultMap" type="pet.dao.model.BlackList">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="black_list_id" jdbcType="INTEGER" property="blackListId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="put_in_time" jdbcType="TIMESTAMP" property="putInTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

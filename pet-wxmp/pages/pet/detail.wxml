@@ -1,0 +1,50 @@
+<!--pages/pet/list.wxml-->
+<view>
+  <view class="pet-list">
+    <view class="item">
+      <view class="img-box">
+        <image class="profile-pet" src="{{pet.pic}}" mode="aspectFit"></image>
+      </view>
+      <view class="pet-title">
+        {{pet.title}}
+      </view>
+      <view class="desc-p">
+        <image src="/images/profile-pet.png" class="icon"></image>
+        <text class="meta cat">宠物品种：</text>
+        <text class="content">{{pet.subCategory}}</text>
+      </view>
+      <view class="desc-p">
+        <image src="/images/gender.png" class="icon"></image>
+        <text class="meta cat">宠物性别：</text>
+        <text class="content">{{pet.gender}}</text>
+      </view>
+      <view class="desc-p">
+        <image src="/images/lights.png" class="icon"></image>
+        <text class="meta cat">绝育情况：</text>
+        <text class="content">{{pet.jieyu}}</text>
+      </view>
+      <view class="desc-p">
+        <image src="/images/security.png" class="icon"></image>
+        <text class="meta cat">免疫情况：</text>
+        <text class="content">{{pet.mianyi}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/map.png" class="icon"></image>
+        <text class="meta loc">领养地点：</text>
+        <text class="content">{{pet.posTxt}}</text>
+      </view>
+      <view class="desc-p2">
+        <image src="/images/ruler.png" class="icon"></image>
+        <text wx:if="{{distance!=''}}">距离您 <text class="orange-txt">{{distance}}</text></text>
+        <text wx:else>正在计算距离...</text>
+      </view>
+      <view class="desc detail">
+        {{pet.detail}}
+      </view>
+    </view>
+  </view>
+  <!-- <button wx:if="{{type=='index'}}" class="btn" type="warn" bindtap="adopt">删除</button> -->
+  <button wx:if="{{type=='index'}}" class="btn" type="primary" bindtap="adopt">我要领养</button>
+  <button class="orange-btn" bindtap="back">返回</button>
+  <button wx:if="{{type=='index'}}" class="gray-btn" bindtap="accusation" data-petid="{{pet.petId}}">举报</button>
+</view>

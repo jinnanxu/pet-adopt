@@ -1,0 +1,26 @@
+<!--miniprogram/pages/select_role/role.wxml-->
+<!--启事表单-->
+<view  class="user-file">
+  <view class="h3 gray-txt txt-center">发布宠物动态</view>
+  <view class="val-input">
+    <view class="label">关联宠物</view>
+    <picker mode="selector" bindchange="bindPetChange" data-array="{{petList}}" value="{{index}}" range="{{petList}}" range-key="subCategory">
+      <view wx:if="{{subCategory == ''}}" class="gray-txt">请选择宠物</view>
+      <view wx:else>{{subCategory}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="label">标题</view>
+    <input bindinput="bindTitleInput" type="text" placeholder="请输入动态标题"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物图片</view>
+    <image wx:if="{{blog.pic != ''}}" mode="aspectFit" class="coach-img" src="{{blog.pic}}"></image>
+    <button type="primary" class="green-btn mt0" bindtap="chooseImg">选择图片</button>
+  </view>
+  <view class="val-input">
+    <view class="label">动态内容</view>
+    <textarea bindinput="bindContentInput" placeholder="请输入动态内容详情"/>
+  </view>
+  <button class="orange-btn" bindtap="submitBlog">提交</button>
+</view>

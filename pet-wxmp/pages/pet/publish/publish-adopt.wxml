@@ -1,0 +1,54 @@
+<!--miniprogram/pages/select_role/role.wxml-->
+<view  class="user-file">
+  <view class="h3 gray-txt txt-center">发布宠物送养</view>
+  <view class="val-input">
+    <view class="label">标题</view>
+    <input bindinput="bindTitleInput" type="text"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物图片</view>
+    <image wx:if="{{petImg != ''}}" mode="aspectFit" class="coach-img" src="{{petImg}}"></image>
+    <button type="primary" class="green-btn mt0" bindtap="chooseImg">选择图片</button>
+  </view>
+  <view class="val-input">
+    <view class="label">宠物类别</view>
+    <input bindinput="bindCatInput" type="text" placeholder="猫、狗、乌龟等"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">具体品种</view>
+    <input type="text" placeholder="上传图片后系统自动识别" disabled="disabled"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">年龄</view>
+    <input bindinput="bindAgeInput" type="text" placeholder=""></input>
+  </view>
+  <view class="val-input">
+    <view class="label">性别</view>
+    <picker bindchange="bindGenderChange" range="{{genders}}">
+      <view>{{pet.gender}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="label">绝育情况</view>
+    <picker bindchange="bindJyChange" range="{{jys}}">
+      <view>{{pet.jieyu}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="label">免疫情况</view>
+    <picker bindchange="bindMyChange" range="{{mys}}">
+      <view>{{pet.mianyi}}</view>
+    </picker>
+  </view>
+  <view class="val-input">
+    <view class="label">领养地点</view>
+    <!-- <input bindinput="bindLocationInput" type="text"></input> -->
+    <button wx:if="{{pet.posTxt==''}}" bindtap="getUserLocation" class="blue-btn">选择地点</button>
+    <view>{{pet.posTxt}}</view>
+  </view>
+  <view class="val-input">
+    <view class="label">详细描述</view>
+    <textarea bindinput="bindDetailInput" placeholder="请输入详细描述"/>
+  </view>
+  <button class="orange-btn mb-20" bindtap="publishPet">提交</button>
+</view>

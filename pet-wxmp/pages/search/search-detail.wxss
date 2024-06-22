@@ -1,0 +1,45 @@
+/* pages/pet/list.wxss */
+.pet-list{
+  line-height: 28px;
+  padding: 0 3%;
+  color: #666;
+}
+.img-box{
+  text-align: center;
+  height: 230px;
+  overflow-y: hidden;
+}
+.pet-list .pet-img{
+  width: 95%;
+  height: 100%;
+}
+.pet-list .pet-title{
+  font-size: 18px;
+  padding: 4px 0;
+}
+.pet-list .item{
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.item .desc{
+  padding-top: 8px;
+}
+.pet-list .desc-p{
+  color: #666;
+  font-size: 14px;
+  display: inline-block;
+  width: 50%;
+}
+.pet-list .desc-p2{
+  color: #666;
+  font-size: 14px;
+}
+.desc-p .icon, .desc-p2 .icon{
+  width: 22px;
+  height: 22px;
+  padding-right: 6px;
+  vertical-align:middle;
+}
+.orange-btn{
+  margin: 20px auto;
+}

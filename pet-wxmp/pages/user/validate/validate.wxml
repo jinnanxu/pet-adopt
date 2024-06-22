@@ -1,0 +1,20 @@
+<!--miniprogram/pages/regist/regist.wxml-->
+<view class="container">
+  <view class="h3 dark-gray txt-center">实名认证</view>
+  <view class="val-input">
+    <view class="meta">真实姓名</view>
+    <input bindinput="bindNameChange" type="text"></input>
+  </view>
+  <view class="val-input">
+    <view class="meta">身份证号</view>
+    <input bindinput="bindIDnoChange" type="number"></input>
+  </view>
+  <view class="val-input">
+    <view class="label">身份证图片</view>
+    <image wx:if="{{idImg != ''}}" mode="aspectFit" class="coach-img" src="{{idImg}}"></image>
+    <button type="primary" class="green-btn mt0" bindtap="chooseImg">选择图片</button>
+  </view>
+  <view class="">
+    <button class="scan-btn reg-btn" bindtap="submitValidate">提交认证</button>
+  </view>
+</view>

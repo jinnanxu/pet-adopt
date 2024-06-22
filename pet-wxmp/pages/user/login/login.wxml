@@ -1,0 +1,17 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="container">
+  <view class="val-input">
+    <view class="meta">手机号</view>
+    <input placeholder="" value="{{mobile}}" bindinput="inputMobile"></input>
+  </view>
+  <view class="val-input">
+    <view class="meta">密码</view>
+    <input type="password" bindinput="inputPwd"></input>
+  </view>
+  <view class="btns">
+    <button class="orange-btn" bindtap="login">登录</button>
+    <button class="orange-btn reg-btn" bindtap="toReg">注册</button>
+  </view>
+</view>
+<view>
+</view>

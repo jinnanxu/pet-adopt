@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.orange-btn{
+  background-color: #f90;
+  color: #fff;
+}
+.h3{font-size: 22px; padding: 8px 0;}
+.txt-center{text-align: center;}
+.dark-gray{color:#666;}
+.blue-btn{
+  background-color: rgb(97, 177, 243);
+  color: #fff;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.gray-txt{color:#999;}
+.orange-txt{color:#f90;}
+.gray-btn{background-color: #666; color: #fff}
+.green-txt{color: #16a31d;}

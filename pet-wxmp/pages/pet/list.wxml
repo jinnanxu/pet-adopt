@@ -1,0 +1,62 @@
+<!--pages/pet/list.wxml-->
+<wxs src="../../utils/date.wxs" module="filter" />
+<view>
+  <view class="pet-head">
+    <ul class="menu-list">
+      <li class="menu" bindtap="toPublishAdopt">
+        <image class="menu-icon" src="/images/menu-pet.png"></image>
+        <view class="txt">发布送养</view>
+      </li>
+      <li class="menu" bindtap="toPublishSearch">
+        <image class="menu-icon" src="/images/menu-search.png"></image>
+        <view class="txt">我要寻宠</view>
+      </li>
+      <li class="menu" bindtap="toPublishBlog">
+        <image class="menu-icon" src="/images/menu-blog.png"></image>
+        <view class="txt">发表动态</view>
+      </li>
+    </ul>
+  </view>
+  <view class="pet-list">
+    <!--开始循环-->
+    <view class="item" wx:for="{{petList}}" wx:key="noticeId" bindtap="toPetDetail" data-petid='{{item.petId}}'>
+      <view class="pet-title">
+        {{item.title}}
+      </view>
+      <view class="desc">
+        <text class="orange-txt">{{item.remark}} </text>{{filter.format(item.publishTime, 'YY-MM-DD hh-mm')}}
+      </view>
+      <view class="img-box">
+        <image class="pet-img" mode="aspectFit" src="{{item.pic}}"></image>
+      </view>
+      <view class="meta-data">
+        <view class="desc-p">
+          <image src="/images/cat.png" class="icon"></image>
+          <text class="meta cat">品种：</text>
+          <text class="content">{{item.subCategory}}<text class="ccc-txt"> | </text>{{item.gender}}</text>
+        </view>
+        <!-- <view class="desc-p">
+          <image src="/images/gender.png" class="icon"></image>
+          <text class="meta cat">性别：</text>
+          <text class="content">{{item.gender}}</text>
+        </view> -->
+        <view class="desc-p">
+          <image src="/images/lights.png" class="icon"></image>
+          <text class="meta cat">绝育：</text>
+          <text class="content">{{item.jieyu}}</text>
+        </view>
+        <view class="desc-p">
+          <image src="/images/security.png" class="icon"></image>
+          <text class="meta cat">免疫：</text>
+          <text class="content">{{item.mianyi}}</text>
+        </view>
+        <view class="desc-p">
+          <image src="/images/map.png" class="icon"></image>
+          <!-- <text class="meta loc">领养地点：</text> -->
+          <text class="content">{{item.posTxt}}</text>
+        </view>
+      </view>
+    </view>
+    <!--循环结束-->
+  </view>
+</view>

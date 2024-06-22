@@ -1,0 +1,24 @@
+<wxs src="../../utils/date.wxs" module="filter" />
+<view class="blog-list">
+  <!--开始循环-->
+  <view wx:for="{{noticeList}}" wx:key="noticeId" class="item" bindtap="toNoticeDetail" data-noticeid="{{item.noticeId}}">
+    <view class="blog-img">
+      <image class="img" mode="aspectFit" src="{{item.pic}}"></image>
+    </view>
+    <view class="blog-txt">
+      <view class="title">{{item.title}}</view>
+      <view class="pet-meta">
+        <view class="pitem">
+          <view class="txt1"><image class="icon" src="/images/menu-pet.png"></image>{{item.category}} | {{item.features}}</view>
+        </view>
+        <view class="pitem">
+          <view class="txt"><image class="icon" src="/images/map.png"></image>{{item.location}}</view>
+        </view>
+        <view class="pitem">
+          <view class="txt"><image class="icon time" src="/images/time.png"></image> {{filter.format(item.publishTime, 'YY-MM-DD')}}</view>
+        </view>
+      </view>
+    </view>
+  </view>  
+  <!--循环结束-->
+</view>
