@@ -59,7 +59,7 @@ Page({
         const tempFilePaths = res.tempFilePaths
         var tmpFileName = tempFilePaths[0].substring(tempFilePaths[0].lastIndexOf('/')+1)
         wx.uploadFile({
-          url: 'http://118.25.89.125:16602/upload-server/upload', //图片服务器
+          url: 'http://118.125.89.125:1602/upload-server/upload', //图片服务器
           filePath: tempFilePaths[0],
           name: 'myFile',
           formData: {
